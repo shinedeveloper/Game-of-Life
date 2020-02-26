@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #0480a8;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+h1 > span {
+    color: #6eb43f;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#editWidth, #editHeight {
+}
+
+#btnStart {
+    margin-top: 0.5em;
+    background-color: #6eb43f;
+    color: #ffffff;
+    padding: 0.2em 1em;
+    font-size: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+#btnNextGeneration {
+    margin-bottom: 1em;
+    background-color: #6eb43f;
+    color: #ffffff;
+    padding: 0.2em 1em;
+    font-size: 1em;
+}
+
+#tabBoard {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#tabBoard td {
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 8px;
+    font-weight: bold;
+    border: 1px solid #01c5ed;
+    cursor: default;
+}
+
+#tabBoard td.alive-cell {
+    /*background-color: #ffffff;*/
+    background-color: #9aef52;
+    /*background-color: #101010;*/
+}
+
+#tabBoard td:not(.alive-cell) {
+    /*background-color: #f0f0f0;*/
+    background-color: #016e90;
+}
+
+#tabBoard td:hover {
+    /*
+    background-color: #ffffdd;
+    */
+}

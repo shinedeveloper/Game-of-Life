@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <section id="startScreen">
+
+        <h1>Game <span>of</span> Life</h1>
+
+        <h2>Select size of the board</h2>
+
+        <table>
+            <tr>
+                <td><label for="editWidth">Width:</label></td>
+                <td><input id="editWidth" name="width" value="100" size="6" autofocus/></td>
+            </tr>
+            <tr>
+                <td><label for="editHeight">Height:</label></td>
+                <td><input id="editHeight" name="height" value="50" size="6"/></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button id="btnStart">Start</button>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+
+
+    <section id="playScreen" class="hidden">
+
+        <button id="btnNextGeneration">Next Generation</button>
+
+        <table id="tabBoard"/>
+
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
